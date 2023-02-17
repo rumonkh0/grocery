@@ -1,0 +1,83 @@
+.offercard {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 360px;
+  /* flex-grow: 1; */
+  padding: 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 10px #ecebeb;
+  border-radius: 4px;
+}
+
+.bannerimg {
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.productimg {
+  height: 145px;
+}
+
+.productname {
+  font-size: 16px;
+  min-height: 40px;
+  padding-bottom: 5px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #7e7e7e;
+  margin-bottom: 15px;
+}
+
+.cartbutton {
+  background-color: #009f7f;
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 13px 25px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+}
+
+.cartbutton:hover {
+  color: black;
+}
+
+.icon {
+  padding-right: 5px;
+}
+
+.details {
+  background-color: #343a40;
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 13px 25px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+}
