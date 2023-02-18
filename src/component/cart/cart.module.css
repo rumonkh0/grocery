@@ -1,0 +1,23 @@
+.cart {
+  min-width: 75px;
+  height: auto;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  background: #fff;
+  box-shadow: 1px 3px 15px #c4c4c4;
+  cursor: pointer;
+  z-index: 1;
+}
+.items{
+    color: white;
+    font-weight: 700;
+    background-color: #009f7f;;
+    padding: .25rem !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    padding: .3rem;
+}

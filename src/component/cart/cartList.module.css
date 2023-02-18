@@ -1,0 +1,52 @@
+.cartlist {
+  background: #eeeeee none scroll 0 0;
+  box-shadow: 0 0 85px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  opacity: 0;
+  overflow-y: scroll;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: all 0.25s ease 0s;
+  z-index: 999;
+  width: 400px;
+}
+
+.show {
+  opacity: 1;
+  padding-bottom: 15px;
+  right: calc(0px - 16px);
+}
+
+.cartheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartheader h4 {
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon {
+  padding-right: 8px;
+}
+
+.cartheader div {
+  padding: 10px;
+  padding-right: 26px;
+  background-color: #009f7f;
+  color: white;
+}
+
+.offer {
+  display: block;
+  margin: auto;
+  text-align: center;
+  height: 30px;
+  background-color: yellow;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}

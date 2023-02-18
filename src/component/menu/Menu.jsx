@@ -19,7 +19,8 @@ function Menu() {
     <div className={style.menu}>
       <ul>
         <li>
-          <FontAwesomeIcon className={style.icon} icon={faHouseChimney} /> Home
+          <FontAwesomeIcon className={style.icon} icon={faHouseChimney} />
+          Home
         </li>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faGift} />
