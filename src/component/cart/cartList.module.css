@@ -50,3 +50,80 @@
   font-weight: 600;
   line-height: 24px;
 }
+
+.summary {
+  width: 100%;
+  padding: 26px;
+  padding-bottom: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > div:first-child {
+  padding: 10px 0;
+  width: 180px;
+  border-top: 1px solid #ddd;
+  text-align: start;
+}
+.row > div:last-child {
+  padding: 10px 0;
+  width: 80px;
+  border-top: 1px solid #ddd;
+  text-align: end;
+}
+
+.row:last-child {
+  font-weight: 600;
+}
+
+.button {
+  width: 100%;
+  padding: 18px 20px 0px 15px;
+}
+
+.place_order {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.coupon {
+  background-color: #fff;
+  margin: 18px 20px 0px 15px;
+  border-radius: 3px;
+  transition: all 1s ease;
+}
+
+.couponbtn {
+  color: black;
+  background-color: white;
+}
+
+.collapse {
+  display: none;
+  border-top: 1px solid #ddd;
+}
+
+.input {
+  border: 1px solid #ddd;
+  line-height: 1.9rem;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.applybtn {
+  padding: 16px 0;
+}
+
+.apply {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: black;
+  letter-spacing: 1px;
+}

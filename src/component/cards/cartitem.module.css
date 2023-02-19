@@ -3,6 +3,7 @@
   align-items: center;
   width: 100%;
   padding: 21px 26px 21px 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .image {
@@ -17,6 +18,7 @@ img{
 
 .detail {
   flex-grow: 1;
+  padding-left: 5px;
   height: 75px;
   display: flex;
   flex-direction: column;
@@ -33,7 +35,9 @@ img{
     width: 80px;
     background-color: #fff;
     border-radius: 3px;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
@@ -43,3 +47,12 @@ button{
     border-radius: 3px;
     padding: 5px 8px;
 }
+
+.price{
+    font-weight: 500;
+}
+
+.remove{
+    color: red;
+}
+

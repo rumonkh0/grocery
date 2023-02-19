@@ -2,7 +2,7 @@ import React from "react";
 import style from "./footer.module.css";
 function Footer() {
   return (
-    <div className={style.footer}>
+    <div id="footer" className={style.footer}>
       <div className={style.container}>
         <div className={style.about}>
           <div className={style.title}>About Us</div>
@@ -18,13 +18,13 @@ function Footer() {
           <div>
             <ul>
               <li>
-                <a href="#">About us</a>
+                <a href="#footer">About us</a>
               </li>
               <li>
-                <a href="#">Privacy policy</a>
+                <a href="#footer">Privacy policy</a>
               </li>
               <li>
-                <a href="#">Terms & condition</a>
+                <a href="#footer">Terms & condition</a>
               </li>
             </ul>
           </div>
@@ -35,13 +35,13 @@ function Footer() {
             <div>
               <ul>
                 <li>
-                  <a href="#">Fruits & Vegetables</a>
+                  <a href="#footer">Fruits & Vegetables</a>
                 </li>
                 <li>
-                  <a href="#">Beauty & Health</a>
+                  <a href="#footer">Beauty & Health</a>
                 </li>
                 <li>
-                  <a href="#">Baby care</a>
+                  <a href="#footer">Baby care</a>
                 </li>
               </ul>
             </div>
