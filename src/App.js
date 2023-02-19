@@ -4,8 +4,10 @@ import style from './app.module.css'
 import Cart from "./component/cart/Cart";
 import CartList from "./component/cart/CartList";
 import Header from "./component/Header/Header";
-import Main from "./component/Main";
+// import Main from "./component/Main";
 import Menu from "./component/menu/Menu";
+import Signup from "./component/Signup";
+import Login from "./component/Login";
 
 function App() {
   const [list, setList] = useState(false);
@@ -23,7 +25,9 @@ function App() {
       <Header menutoggle={menutoggle}/>
       <div className={style.body}>
         <Menu menu={menu}/>
-        <Main />
+        {/* <Main /> */}
+        {/* <Signup/> */}
+        <Login/>
         <Cart listtoggle={listtoggle} />
         <CartList list={list} listtoggle={listtoggle} />
       </div>

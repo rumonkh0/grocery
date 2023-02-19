@@ -1,0 +1,60 @@
+.signup {
+  background-color: #fafafa;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.formcard {
+  background-color: #fff;
+  width: 30%;
+  min-width: 400px;
+  padding: 15px;
+}
+
+.formcard h3 {
+  padding-top: 15px;
+  padding-bottom: 25px !important;
+}
+.form > input {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: #495057;
+  height: 42px;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem !important;
+}
+
+.submit,
+.link {
+  width: 100%;
+  padding: 13px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit {
+  margin-bottom: 10px;
+}
+
+.link {
+  background-color: #f8f9fa;
+  transition: all 0.5s ease;
+  color: black;
+}
+
+.link:hover{
+    background-color: gray;
+    color: white;
+}
+
+.link * {
+  text-decoration: none;
+}

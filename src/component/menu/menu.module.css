@@ -9,7 +9,8 @@
   text-align: left;
   overflow-y: scroll;
   padding: 10px 10px 10px 10px;
-  transition: margin-left 0.5s;  -ms-overflow-style: none;  /* IE and Edge */
+  transition: all 0.5s;
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
@@ -17,16 +18,19 @@
   display: none;
 }
 
-
-.hide{
+.hide {
   margin-left: -200px;
 }
 
-.icon{
-    width: 30px;
-    padding-right: 5px;
+.icon {
+  width: 30px;
+  padding-right: 5px;
 }
 
-.nested{
-    padding-left: 35px;
+.nested {
+  padding-left: 35px;
+}
+
+.collapse{
+  display: none;
 }

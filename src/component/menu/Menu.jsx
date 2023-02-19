@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import style from "./menu.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,9 +14,13 @@ import {
   faKitchenSet,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Menu({menu}) {
+function Menu({ menu }) {
+  const [collapse, setCollapse] = useState(false)
+  var toggle=()=>{
+    collapse?setCollapse(false):setCollapse(true)
+  }
   return (
-    <div className={style.menu+' '+(menu?'':style.hide)}>
+    <div className={style.menu + " " + (menu ? "" : style.hide)}>
       <ul>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faHouseChimney} />
@@ -26,18 +30,18 @@ function Menu({menu}) {
           <FontAwesomeIcon className={style.icon} icon={faGift} />
           Special offer
         </li>
-        <li>
+        <li onClick={toggle}>
           <FontAwesomeIcon className={style.icon} icon={faBowlFood} />
           Food
         </li>
+        <ul className={style.nested +' '+(collapse?'':style.collapse)} >
+          <li>Fruits & Vegetable</li>
+          <li>Breakfast</li>
+        </ul>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faDumbbell} />
           beautiful & health
         </li>
-        <ul className={style.nested}>
-          <li>Fruits & Vegetable</li>
-          <li>Breakfast</li>
-        </ul>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faBaby} />
           Baby Care
