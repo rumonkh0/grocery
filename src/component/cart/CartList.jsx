@@ -4,21 +4,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import Cartitem from "../cards/Cartitem";
 
-function CartList() {
+function CartList(props) {
   let [collapse, setCollapse] = useState(false);
 
   var coupon = () => {
     collapse ? setCollapse(false) : setCollapse(true);
   };
 
+
+
   return (
-    <div className={style.cartlist + " " + style.show}>
+    <div className={style.cartlist + " " + (props.list?style.show:'')}>
       <div className={style.cartheader}>
         <h4>
           <FontAwesomeIcon className={style.icon} icon={faCartShopping} />8
           ITEMS
         </h4>
-        <div>
+        <div onClick={props.listtoggle}>
           <FontAwesomeIcon icon={faXmark} />
         </div>
       </div>
@@ -50,7 +52,13 @@ function CartList() {
               </button>
             </div>
             <div
-              className={style.button + " " + (collapse ? style.collapse : "")}
+              className={
+                style.button +
+                " " +
+                style.collapsediv +
+                " " +
+                (collapse ? style.collapse : "")
+              }
             >
               <input
                 className={style.input}

@@ -9,10 +9,10 @@ import {
   faMagnifyingGlass
 } from "@fortawesome/free-solid-svg-icons";
 
-function header() {
+function header({menutoggle}) {
   return (
     <nav className={style.nav}>
-      <div>
+      <div onClick={menutoggle}>
         <FontAwesomeIcon className={style.menu} icon={faBars} />
       </div>
 

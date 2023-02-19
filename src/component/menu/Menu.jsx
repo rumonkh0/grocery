@@ -14,9 +14,9 @@ import {
   faKitchenSet,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Menu() {
+function Menu({menu}) {
   return (
-    <div className={style.menu}>
+    <div className={style.menu+' '+(menu?'':style.hide)}>
       <ul>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faHouseChimney} />

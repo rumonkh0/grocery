@@ -3,9 +3,9 @@ import style from "./cart.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-function Cart() {
+function Cart(props) {
   return (
-    <div className={style.cart}>
+    <div className={style.cart} onClick={props.listtoggle}>
       <div className={style.items}>
         <i>
           <FontAwesomeIcon icon={faCartShopping} />{" "}

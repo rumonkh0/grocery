@@ -104,6 +104,9 @@
 
 .collapse {
   display: none;
+}
+
+.collapsediv {
   border-top: 1px solid #ddd;
 }
 
