@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Footer from "./Footer/Footer"
 import style from './signup.module.css'
 
 function Login() {
   return (
+    <div className={style.cover}>
     <div className={style.signup}>
       <div className={style.formcard}>
         <h3>Login in To Your Account</h3>
@@ -16,6 +17,8 @@ function Login() {
           </button>
         </form>
       </div>
+    </div>
+    <Footer/>
     </div>
   )
 }

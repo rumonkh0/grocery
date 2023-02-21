@@ -12,6 +12,7 @@ import {
   faCapsules,
   faBriefcase,
   faKitchenSet,
+  faCaretDown
 } from "@fortawesome/free-solid-svg-icons";
 
 function Menu({ menu }) {
@@ -33,6 +34,7 @@ function Menu({ menu }) {
         <li onClick={toggle}>
           <FontAwesomeIcon className={style.icon} icon={faBowlFood} />
           Food
+          <FontAwesomeIcon className={style.drop} icon={faCaretDown}/>
         </li>
         <ul className={style.nested +' '+(collapse?'':style.collapse)} >
           <li>Fruits & Vegetable</li>

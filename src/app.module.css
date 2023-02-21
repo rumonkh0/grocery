@@ -1,5 +1,6 @@
 .body {
   display: flex;
   margin-top: 66px;
+  overflow-y: scroll;
   height: calc(100vh - 66px);
 }
