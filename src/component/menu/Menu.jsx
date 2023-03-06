@@ -42,7 +42,7 @@ function Menu({ menu }) {
         </ul>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faDumbbell} />
-          beautiful & health
+          Beautiful & health
         </li>
         <li>
           <FontAwesomeIcon className={style.icon} icon={faBaby} />

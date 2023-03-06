@@ -1,5 +1,5 @@
 .menu {
-  min-width: 200px;
+  min-width: 230px;
   height: 100%;
   background-color: #ffffff;
   color: #212529;
@@ -19,7 +19,7 @@
 }
 
 .hide {
-  margin-left: -200px;
+  margin-left: -230px;
 }
 
 .icon{
@@ -39,4 +39,8 @@
 
 .collapse{
   display: none;
+}
+
+li{
+  padding: 8px 0;
 }
