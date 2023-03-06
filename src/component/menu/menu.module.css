@@ -22,6 +22,14 @@
   margin-left: -230px;
 }
 
+.active{
+  color: #009f7f;
+}
+
+.nactive{
+  color: black;
+}
+
 .icon{
   width: 30px;
   padding-right: 5px;
@@ -43,4 +51,5 @@
 
 li{
   padding: 8px 0;
+  cursor: pointer;
 }
