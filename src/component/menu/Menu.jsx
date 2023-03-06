@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import style from "./menu.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,14 +12,14 @@ import {
   faCapsules,
   faBriefcase,
   faKitchenSet,
-  faCaretDown
+  faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Menu({ menu }) {
-  const [collapse, setCollapse] = useState(false)
-  var toggle=()=>{
-    collapse?setCollapse(false):setCollapse(true)
-  }
+  const [collapse, setCollapse] = useState(false);
+  var toggle = () => {
+    collapse ? setCollapse(false) : setCollapse(true);
+  };
   return (
     <div className={style.menu + " " + (menu ? "" : style.hide)}>
       <ul>
@@ -34,9 +34,9 @@ function Menu({ menu }) {
         <li onClick={toggle}>
           <FontAwesomeIcon className={style.icon} icon={faBowlFood} />
           Food
-          <FontAwesomeIcon className={style.drop} icon={faCaretDown}/>
+          <FontAwesomeIcon className={style.drop} icon={faCaretDown} />
         </li>
-        <ul className={style.nested +' '+(collapse?'':style.collapse)} >
+        <ul className={style.nested + " " + (collapse ? "" : style.collapse)}>
           <li>Fruits & Vegetable</li>
           <li>Breakfast</li>
         </ul>
