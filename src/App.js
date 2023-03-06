@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import style from './app.module.css'
+import style from "./app.module.css";
 import Cart from "./component/cart/Cart";
 import CartList from "./component/cart/CartList";
 import Header from "./component/Header/Header";
@@ -22,12 +22,12 @@ function App() {
   };
   return (
     <div className="App">
-      <Header menutoggle={menutoggle}/>
+      <Header menutoggle={menutoggle} />
       <div className={style.body}>
-        <Menu menu={menu}/>
+        <Menu menu={menu} />
         {/* <Main /> */}
         {/* <Signup/> */}
-        <Login/>
+        <Login />
         <Cart listtoggle={listtoggle} />
         <CartList list={list} listtoggle={listtoggle} />
       </div>
